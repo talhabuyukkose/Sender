@@ -1,40 +1,35 @@
-using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Sender.Core.Models;
 using Sender.Infrastructure.Services.Tsoft;
 
 namespace Sender.WebAPI.Controllers
 {
+    [Route("api/[controller]")]
     [ApiController]
-    [Route("[controller]")]
-    public class WeatherForecastController : ControllerBase
+    public class SendImageController : ControllerBase
     {
-        private static readonly string[] Summaries = new[]
-        {
-            "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
-        };
-
-        private readonly ILogger<WeatherForecastController> _logger;
+        private readonly ILogger<SendImageController> logger;
         private readonly TsoftClient tsoftClient;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, TsoftClient tsoftClient)
+        public SendImageController(ILogger<SendImageController> logger, TsoftClient tsoftClient)
         {
-            _logger = logger;
+            this.logger = logger;
             this.tsoftClient = tsoftClient;
         }
 
-        [HttpPost(Name = "GetWeatherForecast")]
+        //    BaseUrl = "https://arge-talhabuyukkose.1isim.com",
+        //    UserName = "talha",
+        //    Password = "Talha.01"
+
+        [HttpPost]
         [RequestSizeLimit(1 * 1024 * 1024)]
         //[RequestFormLimits(BufferBody = true, MultipartBodyLengthLimit = 10485760000)]
         public async Task<object> Get([FromForm] SiteUser siteUser)
         {
-            //SiteUser siteUser = new SiteUser()
-            //{
-            //    BaseUrl = "https://arge-talhabuyukkose.1isim.com",
-            //    UserName = "talha",
-            //    Password = "Talha.01"
-            //};
+
             var responses = new List<object>();
+
             using (MemoryStream memoryStream = new MemoryStream())
             {
                 foreach (var formFile in siteUser.FromFiles)
