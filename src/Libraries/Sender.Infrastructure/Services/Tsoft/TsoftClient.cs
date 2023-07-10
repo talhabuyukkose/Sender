@@ -1,12 +1,13 @@
-﻿using Microsoft.Extensions.Options;
+﻿using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
 using Sender.Core.Constants;
-using Sender.Core.Constants.T_Soft;
+using Sender.Core.Constants.Tsoft;
 using Sender.Core.Extensions.JsonProcess;
 using Sender.Core.Interfaces;
-using Sender.Core.Models;
+using Sender.Core.Models.ApiModels;
 using Sender.Core.Models.MemoryModels;
-using Sender.Core.Models.T_SoftModels;
+using Sender.Core.Models.TsoftModels;
 using Sender.Infrastructure.Builders;
 using System;
 using System.Collections.Generic;
@@ -21,11 +22,13 @@ namespace Sender.Infrastructure.Services.Tsoft
     {
         private readonly HttpClient client;
         private readonly IMemoryService memoryService;
+        private readonly ILogger<TsoftClient> logger;
 
-        public TsoftClient(HttpClient httpClient, IMemoryService memoryService)
+        public TsoftClient(HttpClient httpClient, IMemoryService memoryService, ILogger<TsoftClient> logger)
         {
             this.client = httpClient;
             this.memoryService = memoryService;
+            this.logger = logger;
         }
 
         private async Task<string> GetToken(SiteUser user)
@@ -37,11 +40,13 @@ namespace Sender.Infrastructure.Services.Tsoft
             var urlWithEndPoint = new EndpointBuilder(user.BaseUrl)
                 .Append("rest1")
                 .Append(ConstantTsoftEndPoints.AuthLogin)
-                .Append(user.UserName).Build();
+                .Append(user.UserName)
+                .Build();
 
 
             if (memoryService.TryGetValue(user.BaseUrl, out var memoryData))
             {
+                logger.LogInformation("Token received from MemoryCacheService");
                 return ((MemoryWebSiteModel)memoryData).Token;
             }
 
@@ -70,40 +75,93 @@ namespace Sender.Infrastructure.Services.Tsoft
             memoryService.CreateEntry(user.BaseUrl);
             memoryService.Set(user.BaseUrl, memoryData, dateTimeResult.AddHours(-1));
 
+
+            logger.LogInformation($"Token received from {user.BaseUrl}");
+
             return (memoryData as MemoryWebSiteModel).Token;
         }
 
-        public async Task<TsoftBaseModel> SendImage(SiteUser user, byte[] byteFile, string fileName, string productCode)
+        public async Task<TsoftBaseModel> SendImage(SiteUser user, byte[] byteFile, string productCode)
         {
+            ArgumentNullException.ThrowIfNullOrEmpty(user.BaseUrl, nameof(user.BaseUrl));
             ArgumentNullException.ThrowIfNull(byteFile, nameof(byteFile));
-            ArgumentNullException.ThrowIfNullOrEmpty(fileName, nameof(fileName));
             ArgumentNullException.ThrowIfNullOrEmpty(productCode, nameof(productCode));
 
-            string token = string.Empty;
+            string token = await this.GetToken(user);
 
-            if (memoryService.TryGetValue(user.BaseUrl, out var memoryData))
-            {
-                token = ((MemoryWebSiteModel)memoryData).Token;
-            }
-            else
-            {
-                token = await this.GetToken(user);
-            }
             var urlWithEndPoint = new EndpointBuilder(user.BaseUrl)
                 .Append("rest1")
                 .Append(ConstantTsoftEndPoints.AddImageFromFile)
-                .AppendParam("ProductCode", productCode).Build();
+                .AppendParam("ProductCode", productCode)
+                .Build();
 
             var fileContent = new ByteArrayContent(byteFile);
             fileContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue("image/jpeg");
 
             var multipartFromDataContent = new MultipartFormDataContent();
-            multipartFromDataContent.Add(fileContent, "image", fileName);
+            multipartFromDataContent.Add(fileContent, "image", productCode);
             multipartFromDataContent.Add(new StringContent(token), "token");
 
             var responseMessage = await client.PostAsync(urlWithEndPoint, multipartFromDataContent);
 
+            var tsoftBaseModel = await responseMessage.Content.ReadFromJsonAsync<TsoftBaseModel>();
+
+            if (tsoftBaseModel.message.FirstOrDefault().type == 1)
+            {
+                logger.LogInformation($"{productCode} kodlu ürün resmi başarıyla eklendi.");
+            }
+            else
+            {
+                logger.LogError($"{productCode} kodlu ürün resmi yüklenemedi. Message : {string.Join(Environment.NewLine, tsoftBaseModel.message.FirstOrDefault().text)}");
+            }
+
             return await responseMessage.Content.ReadFromJsonAsync<TsoftBaseModel>();
+        }
+
+        public async Task<TsoftProductModel> GetProducts(SiteUser user, int start, int limit)
+        {
+            ArgumentNullException.ThrowIfNullOrEmpty(user.BaseUrl, nameof(user.BaseUrl));
+
+            string token = await this.GetToken(user);
+
+            var urlEndpointBuilder = new EndpointBuilder(user.BaseUrl)
+                .Append("rest1")
+                .Append(ConstantTsoftEndPoints.GetProducts)
+                .Build();
+
+            var keyValuePairs = new List<KeyValuePair<string, string>>
+                {
+                    new KeyValuePair<string, string>("token",token),
+                    new KeyValuePair<string, string>("limit",limit.ToString()),
+                    new KeyValuePair<string, string>("start",start.ToString())
+                };
+
+            var httpresponse = await client.PostAsync(urlEndpointBuilder, new FormUrlEncodedContent(keyValuePairs));
+
+            return await httpresponse.Content.ReadFromJsonAsync<TsoftProductModel>(); ;
+        }
+
+        public async Task<int> GetProductTotal(SiteUser user)
+        {
+            ArgumentNullException.ThrowIfNullOrEmpty(user.BaseUrl, nameof(user.BaseUrl));
+
+            string token = await GetToken(user);
+
+            var urlEndpointBuilder = new EndpointBuilder(user.BaseUrl)
+                .Append("rest1")
+                .Append(ConstantTsoftEndPoints.GetProductTotal)
+                .Build();
+
+            var keyValuePairs = new List<KeyValuePair<string, string>>
+            {
+                new KeyValuePair<string, string>("token",token)
+            };
+
+            var httpresponse = await client.PostAsync(urlEndpointBuilder, new FormUrlEncodedContent(keyValuePairs));
+
+            var responsemodel = await httpresponse.Content.ReadFromJsonAsync<TsoftBaseModel>();
+
+            return (int)responsemodel.summary.totalRecordCount;
         }
     }
 }

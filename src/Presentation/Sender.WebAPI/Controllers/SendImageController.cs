@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Sender.Core.Models;
+using Sender.Core.Models.ApiModels;
 using Sender.Infrastructure.Services.Tsoft;
 
 namespace Sender.WebAPI.Controllers
@@ -25,8 +25,14 @@ namespace Sender.WebAPI.Controllers
         [HttpPost]
         [RequestSizeLimit(1 * 1024 * 1024)]
         //[RequestFormLimits(BufferBody = true, MultipartBodyLengthLimit = 10485760000)]
-        public async Task<object> Get([FromForm] SiteUser siteUser)
+        public async Task<object> Post([FromForm] SiteUserWithfile siteUser)
         {
+            var siteuserdto = new SiteUser()
+            {
+                BaseUrl = siteUser.BaseUrl,
+                Password = siteUser.Password,
+                UserName = siteUser.UserName,
+            };
 
             var responses = new List<object>();
 
@@ -39,12 +45,13 @@ namespace Sender.WebAPI.Controllers
                     var byteFile = memoryStream.ToArray();
 
                     var response = await tsoftClient.SendImage(
-                        siteUser,
+                        siteuserdto,
                         byteFile,
-                        formFile.FileName,
                         formFile.FileName.Replace(".jpg", "").Replace(".jpeg", "")
                         );
                     responses.Add(response);
+
+                    logger.LogInformation($"{formFile.FileName} jpg dosyası yüklendi.");
 
                     memoryStream.Position = 0;
                 }

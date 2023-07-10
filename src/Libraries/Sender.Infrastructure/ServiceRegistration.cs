@@ -1,6 +1,8 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 using Sender.Core.Interfaces;
+using Sender.Infrastructure.Services.ActionFilter;
 using Sender.Infrastructure.Services.Cache;
+using Sender.Infrastructure.Services.ExceptionFilter;
 using Sender.Infrastructure.Services.Tsoft;
 using System;
 using System.Collections.Generic;
@@ -22,6 +24,12 @@ namespace Sender.Infrastructure
             serviceCollection.AddHttpClient<TsoftClient>();
 
             serviceCollection.AddScoped<IMemoryService, MemoryService>();
+
+            serviceCollection.AddControllers(option =>
+            {
+                option.Filters.Add<CustomExceptionFilter>();
+                option.Filters.Add<CustomActionFilter>();
+            });
         }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Sender.Core.Models.T_SoftModels
+namespace Sender.Core.Models.TsoftModels
 {
     public class TsoftLoginModel
     {

@@ -1,0 +1,111 @@
+﻿2023-07-09 00:06:43.756 +03:00  INF  Now listening on: https://localhost:7270
+2023-07-09 00:06:43.775 +03:00  INF  Now listening on: http://localhost:5027
+2023-07-09 00:06:43.777 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-09 00:06:43.777 +03:00  INF  Hosting environment: Development
+2023-07-09 00:06:43.777 +03:00  INF  Content root path: C:\Users\talha\OneDrive\Desktop\VisualStudio\Web\Sender\src\Presentation\Sender.WebAPI
+2023-07-09 00:06:45.528 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/index.html - -
+2023-07-09 00:06:45.814 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_vs/browserLink - -
+2023-07-09 00:06:45.814 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - -
+2023-07-09 00:06:45.830 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 14.1710ms
+2023-07-09 00:06:45.830 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/index.html - - - 200 - text/html;charset=utf-8 306.3765ms
+2023-07-09 00:06:45.861 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.9965ms
+2023-07-09 00:06:46.004 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - -
+2023-07-09 00:06:46.114 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 110.3427ms
+2023-07-09 00:07:05.484 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/api/Product - -
+2023-07-09 00:07:05.496 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-09 00:07:05.510 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IAsyncEnumerable`1[System.Object] GetTsoftProducts() on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-09 00:07:05.523 +03:00  INF  Executing ObjectResult, writing value of type 'Sender.WebAPI.Controllers.ProductController+<GetTsoftProducts>d__3'.
+2023-07-09 00:07:05.544 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/auth/login/talha
+2023-07-09 00:07:05.545 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/auth/login/talha
+2023-07-09 00:07:05.856 +03:00  INF  Received HTTP response headers after 309.1037ms - 200
+2023-07-09 00:07:05.858 +03:00  INF  End processing HTTP request after 315.9079ms - 200
+2023-07-09 00:07:05.870 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-09 00:07:05.870 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-09 00:07:06.017 +03:00  INF  Received HTTP response headers after 147.1127ms - 200
+2023-07-09 00:07:06.017 +03:00  INF  End processing HTTP request after 147.3609ms - 200
+2023-07-09 00:07:06.025 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-09 00:07:06.025 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-09 00:07:06.383 +03:00  INF  Received HTTP response headers after 358.1995ms - 200
+2023-07-09 00:07:06.383 +03:00  INF  End processing HTTP request after 358.4192ms - 200
+2023-07-09 00:07:06.664 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 1151.8062ms
+2023-07-09 00:07:06.665 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-09 00:07:06.665 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/api/Product - - - 200 - application/json;+charset=utf-8 1181.7783ms
+2023-07-09 00:07:25.126 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/api/Product - -
+2023-07-09 00:07:25.128 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-09 00:07:25.128 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IAsyncEnumerable`1[System.Object] GetTsoftProducts() on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-09 00:07:25.129 +03:00  INF  Executing ObjectResult, writing value of type 'Sender.WebAPI.Controllers.ProductController+<GetTsoftProducts>d__3'.
+2023-07-09 00:07:25.129 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-09 00:07:25.129 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-09 00:07:25.334 +03:00  INF  Received HTTP response headers after 205.1186ms - 200
+2023-07-09 00:07:25.334 +03:00  INF  End processing HTTP request after 205.364ms - 200
+2023-07-09 00:07:25.335 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-09 00:07:25.335 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-09 00:07:25.636 +03:00  INF  Received HTTP response headers after 301.1846ms - 200
+2023-07-09 00:07:25.636 +03:00  INF  End processing HTTP request after 301.4798ms - 200
+2023-07-09 00:07:25.839 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 711.4226ms
+2023-07-09 00:07:25.840 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-09 00:07:25.840 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/api/Product - - - 200 - application/json;+charset=utf-8 713.8145ms
+2023-07-09 00:07:31.902 +03:00  INF  Now listening on: https://localhost:7270
+2023-07-09 00:07:31.920 +03:00  INF  Now listening on: http://localhost:5027
+2023-07-09 00:07:31.922 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-09 00:07:31.922 +03:00  INF  Hosting environment: Development
+2023-07-09 00:07:31.922 +03:00  INF  Content root path: C:\Users\talha\OneDrive\Desktop\VisualStudio\Web\Sender\src\Presentation\Sender.WebAPI
+2023-07-09 00:07:32.938 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/index.html - -
+2023-07-09 00:07:33.197 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/index.html - - - 200 - text/html;charset=utf-8 259.6005ms
+2023-07-09 00:07:33.201 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - -
+2023-07-09 00:07:33.201 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_vs/browserLink - -
+2023-07-09 00:07:33.228 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 27.3709ms
+2023-07-09 00:07:33.261 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 60.0888ms
+2023-07-09 00:07:33.503 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - -
+2023-07-09 00:07:33.648 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 145.3671ms
+2023-07-09 00:08:07.480 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/api/Product - -
+2023-07-09 00:08:07.494 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-09 00:08:07.505 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IAsyncEnumerable`1[System.Object] GetTsoftProducts() on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-09 00:08:07.518 +03:00  INF  Executing ObjectResult, writing value of type 'Sender.WebAPI.Controllers.ProductController+<GetTsoftProducts>d__3'.
+2023-07-09 00:08:07.541 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/auth/login/talha
+2023-07-09 00:08:07.542 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/auth/login/talha
+2023-07-09 00:08:07.794 +03:00  INF  Received HTTP response headers after 249.6404ms - 200
+2023-07-09 00:08:07.795 +03:00  INF  End processing HTTP request after 255.158ms - 200
+2023-07-09 00:08:07.810 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-09 00:08:07.810 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-09 00:08:07.877 +03:00  INF  Received HTTP response headers after 66.6995ms - 200
+2023-07-09 00:08:07.877 +03:00  INF  End processing HTTP request after 67.0033ms - 200
+2023-07-09 00:08:07.884 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-09 00:08:07.884 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-09 00:08:08.185 +03:00  INF  Received HTTP response headers after 300.7991ms - 200
+2023-07-09 00:08:08.185 +03:00  INF  End processing HTTP request after 301.0388ms - 200
+2023-07-09 00:08:08.477 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 968.2317ms
+2023-07-09 00:08:08.477 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-09 00:08:08.478 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/api/Product - - - 200 - application/json;+charset=utf-8 1000.6640ms
+2023-07-09 00:12:28.037 +03:00  INF  Now listening on: https://localhost:7270
+2023-07-09 00:12:28.055 +03:00  INF  Now listening on: http://localhost:5027
+2023-07-09 00:12:28.057 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-09 00:12:28.057 +03:00  INF  Hosting environment: Development
+2023-07-09 00:12:28.057 +03:00  INF  Content root path: C:\Users\talha\OneDrive\Desktop\VisualStudio\Web\Sender\src\Presentation\Sender.WebAPI
+2023-07-09 00:12:29.014 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/index.html - -
+2023-07-09 00:12:29.248 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/index.html - - - 200 - text/html;charset=utf-8 237.8490ms
+2023-07-09 00:12:29.259 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - -
+2023-07-09 00:12:29.259 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_vs/browserLink - -
+2023-07-09 00:12:29.277 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 17.5378ms
+2023-07-09 00:12:29.305 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 46.0273ms
+2023-07-09 00:12:29.456 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - -
+2023-07-09 00:12:29.626 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 169.5035ms
+2023-07-09 00:12:37.589 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/api/Product - -
+2023-07-09 00:12:37.598 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-09 00:12:37.611 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IAsyncEnumerable`1[System.Object] GetTsoftProducts() on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-09 00:12:37.626 +03:00  INF  Executing ObjectResult, writing value of type 'Sender.WebAPI.Controllers.ProductController+<GetTsoftProducts>d__3'.
+2023-07-09 00:12:37.648 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/auth/login/talha
+2023-07-09 00:12:37.649 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/auth/login/talha
+2023-07-09 00:12:37.932 +03:00  INF  Received HTTP response headers after 280.6334ms - 200
+2023-07-09 00:12:37.933 +03:00  INF  End processing HTTP request after 286.3572ms - 200
+2023-07-09 00:12:37.945 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-09 00:12:37.945 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-09 00:12:38.077 +03:00  INF  Received HTTP response headers after 131.9489ms - 200
+2023-07-09 00:12:38.077 +03:00  INF  End processing HTTP request after 132.1682ms - 200
+2023-07-09 00:12:38.084 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-09 00:12:38.084 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-09 00:12:38.403 +03:00  INF  Received HTTP response headers after 318.5456ms - 200
+2023-07-09 00:12:38.403 +03:00  INF  End processing HTTP request after 318.7568ms - 200
+2023-07-09 00:12:38.693 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 1078.7167ms
+2023-07-09 00:12:38.694 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-09 00:12:38.695 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/api/Product - - - 200 - application/json;+charset=utf-8 1105.3979ms

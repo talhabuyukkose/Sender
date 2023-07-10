@@ -1,9 +1,13 @@
-
 using Sender.Infrastructure;
+
+
+
+
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Service Registrations
+builder.Logging.AddLoggingInfrastructureRegistration(builder.Configuration);
 builder.Services.AddInfrastructureRegistration();
 
 builder.Services.AddHttpClient();

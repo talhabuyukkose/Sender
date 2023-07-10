@@ -1,0 +1,105 @@
+﻿2023-07-10 23:28:06.131 +03:00  INF  Now listening on: https://localhost:7270
+2023-07-10 23:28:06.155 +03:00  INF  Now listening on: http://localhost:5027
+2023-07-10 23:28:06.157 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-10 23:28:06.158 +03:00  INF  Hosting environment: Development
+2023-07-10 23:28:06.158 +03:00  INF  Content root path: C:\Users\talha\OneDrive\Desktop\VisualStudio\Web\Sender\src\Presentation\Sender.WebAPI
+2023-07-10 23:28:07.341 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/index.html - -
+2023-07-10 23:28:07.660 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/index.html - - - 200 - text/html;charset=utf-8 321.4084ms
+2023-07-10 23:28:07.663 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - -
+2023-07-10 23:28:07.666 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_vs/browserLink - -
+2023-07-10 23:28:07.679 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 15.9949ms
+2023-07-10 23:28:07.741 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 74.8749ms
+2023-07-10 23:28:07.862 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - -
+2023-07-10 23:28:07.968 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 106.0217ms
+2023-07-10 23:28:11.647 +03:00  INF  Request starting HTTP/2 POST https://localhost:7270/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryif9dSpzd0rGOAuu6 328
+2023-07-10 23:28:11.654 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-10 23:28:11.676 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IAsyncEnumerable`1[System.Object] GetTsoftProducts(Sender.Core.Models.ApiModels.SiteUser) on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-10 23:28:11.725 +03:00  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-07-10 23:28:11.735 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 55.4823ms
+2023-07-10 23:28:11.736 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-10 23:28:11.736 +03:00  INF  Request finished HTTP/2 POST https://localhost:7270/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryif9dSpzd0rGOAuu6 328 - 400 - application/problem+json;+charset=utf-8 89.8035ms
+2023-07-10 23:28:16.306 +03:00  INF  Request starting HTTP/2 POST https://localhost:7270/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryobKEoY3KA8BbQTrc 328
+2023-07-10 23:28:16.307 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-10 23:28:16.308 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IAsyncEnumerable`1[System.Object] GetTsoftProducts(Sender.Core.Models.ApiModels.SiteUser) on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-10 23:28:16.310 +03:00  INF  Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-07-10 23:28:16.310 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 2.1233ms
+2023-07-10 23:28:16.310 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-10 23:28:16.310 +03:00  INF  Request finished HTTP/2 POST https://localhost:7270/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryobKEoY3KA8BbQTrc 328 - 400 - application/problem+json;+charset=utf-8 4.2399ms
+2023-07-10 23:28:20.935 +03:00  INF  Request starting HTTP/2 POST https://localhost:7270/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryQBm5UAoARmPqSXCg 331
+2023-07-10 23:28:20.935 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-10 23:28:20.935 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IAsyncEnumerable`1[System.Object] GetTsoftProducts(Sender.Core.Models.ApiModels.SiteUser) on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-10 23:54:54.980 +03:00  INF  Executing ObjectResult, writing value of type 'Sender.WebAPI.Controllers.ProductController+<GetTsoftProducts>d__3'.
+2023-07-10 23:54:55.182 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 1594246.809ms
+2023-07-10 23:54:55.185 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-10 23:54:55.192 +03:00  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+   at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at Sender.Infrastructure.Services.Tsoft.TsoftClient.GetToken(SiteUser user)
+   at Sender.Infrastructure.Services.Tsoft.TsoftClient.GetProductTotal(SiteUser user)
+   at Sender.WebAPI.Controllers.ProductController.GetTsoftProducts(SiteUser siteUser)+MoveNext() in C:\Users\talha\OneDrive\Desktop\VisualStudio\Web\Sender\src\Presentation\Sender.WebAPI\Controllers\ProductController.cs:line 31
+   at Sender.WebAPI.Controllers.ProductController.GetTsoftProducts(SiteUser siteUser)+System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult()
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2023-07-10 23:54:55.230 +03:00  INF  Request finished HTTP/2 POST https://localhost:7270/api/Product multipart/form-data;+boundary=----WebKitFormBoundaryQBm5UAoARmPqSXCg 331 - 500 - text/plain;+charset=utf-8 1594295.4021ms
+2023-07-10 23:55:11.073 +03:00  INF  Request starting HTTP/2 POST https://localhost:7270/api/Product multipart/form-data;+boundary=----WebKitFormBoundarypHqDLXtB7B4xNUu9 331
+2023-07-10 23:55:11.074 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-10 23:55:11.078 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Collections.Generic.IAsyncEnumerable`1[System.Object] GetTsoftProducts(Sender.Core.Models.ApiModels.SiteUser) on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-10 23:55:15.575 +03:00  INF  Executing ObjectResult, writing value of type 'Sender.WebAPI.Controllers.ProductController+<GetTsoftProducts>d__3'.
+2023-07-10 23:55:25.301 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 14222.181ms
+2023-07-10 23:55:25.303 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-10 23:55:25.307 +03:00  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: An invalid request URI was provided. Either the request URI must be an absolute URI or BaseAddress must be set.
+   at System.Net.Http.HttpClient.PrepareRequestMessage(HttpRequestMessage request)
+   at System.Net.Http.HttpClient.SendAsync(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationToken cancellationToken)
+   at Sender.Infrastructure.Services.Tsoft.TsoftClient.GetToken(SiteUser user)
+   at Sender.Infrastructure.Services.Tsoft.TsoftClient.GetProductTotal(SiteUser user)
+   at Sender.WebAPI.Controllers.ProductController.GetTsoftProducts(SiteUser siteUser)+MoveNext() in C:\Users\talha\OneDrive\Desktop\VisualStudio\Web\Sender\src\Presentation\Sender.WebAPI\Controllers\ProductController.cs:line 31
+   at Sender.WebAPI.Controllers.ProductController.GetTsoftProducts(SiteUser siteUser)+System.Threading.Tasks.Sources.IValueTaskSource<System.Boolean>.GetResult()
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](Utf8JsonWriter writer, TValue& value, JsonTypeInfo jsonTypeInfo, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+
+2023-07-10 23:55:25.310 +03:00  INF  Request finished HTTP/2 POST https://localhost:7270/api/Product multipart/form-data;+boundary=----WebKitFormBoundarypHqDLXtB7B4xNUu9 331 - 500 - text/plain;+charset=utf-8 14237.5896ms
