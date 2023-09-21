@@ -1,4 +1,5 @@
-﻿using Microsoft.Extensions.Logging;
+﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.Net.Http.Headers;
 using Sender.Core.Constants;
@@ -81,6 +82,41 @@ namespace Sender.Infrastructure.Services.Tsoft
             return (memoryData as MemoryWebSiteModel).Token;
         }
 
+
+        public async Task<SendImageFromUrl> SendImageFromUrl(SiteUser user, SendImageFromUrl content)
+        {
+            ArgumentNullException.ThrowIfNullOrEmpty(nameof(user));
+            ArgumentNullException.ThrowIfNull(nameof(content));
+
+            string token = await this.GetToken(user);
+
+            var url = new EndpointBuilder(user.BaseUrl)
+                .Append("rest1")
+                .Append(ConstantTsoftEndPoints.AddImageFromLink)
+                .Build();
+
+            var keyValuePair = new Dictionary<string, string>
+            {
+                {"token",token},
+                { "data",content.JsonSerialize() }
+            };
+
+            var responseMessage = await client.PostAsync(url, new FormUrlEncodedContent(keyValuePair));
+
+            var tsoftBaseModel = await responseMessage.Content.ReadFromJsonAsync<TsoftBaseModel2>();
+
+            if (tsoftBaseModel.message.FirstOrDefault().type == 1)
+            {
+                logger.LogInformation($"{content.ProductCode} kodlu ürün resmi başarıyla eklendi.");
+                return default(SendImageFromUrl);
+            }
+            else
+            {
+                logger.LogError($"{content.ProductCode} kodlu ürün resmi yüklenemedi. Message : {string.Join(Environment.NewLine, tsoftBaseModel.message.FirstOrDefault().text)}");
+                return content;
+            }
+        }
+
         public async Task<TsoftBaseModel> SendImage(SiteUser user, byte[] byteFile, string productCode)
         {
             ArgumentNullException.ThrowIfNullOrEmpty(user.BaseUrl, nameof(user.BaseUrl));
@@ -140,8 +176,28 @@ namespace Sender.Infrastructure.Services.Tsoft
 
             return await httpresponse.Content.ReadFromJsonAsync<TsoftProductModel>(); ;
         }
+        public async Task<TsoftProductModel> GetTsoftProductAll(SiteUser siteUser)
+        {
+            TsoftProductModel tsoftProductModel = new TsoftProductModel();
+            //var siteUser = new SiteUser()
+            //{
+            //    BaseUrl = "https://arge-talhabuyukkose.1isim.com",
+            //    UserName = "talha",
+            //    Password = "Talha.01"
+            //};
+            var totalproductcount = await GetProductTotalCount(siteUser);
 
-        public async Task<int> GetProductTotal(SiteUser user)
+            int limit = 100;
+            for (int i = 0; i < totalproductcount / limit + 1; i++)
+            {
+                var responsemodel = await GetProducts(siteUser, limit * i, limit);
+
+                tsoftProductModel.data.AddRange(responsemodel.data);
+            }
+
+            return tsoftProductModel;
+        }
+        public async Task<int> GetProductTotalCount(SiteUser user)
         {
             ArgumentNullException.ThrowIfNullOrEmpty(user.BaseUrl, nameof(user.BaseUrl));
 

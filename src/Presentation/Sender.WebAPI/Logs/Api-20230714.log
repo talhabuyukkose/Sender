@@ -1,0 +1,279 @@
+﻿2023-07-14 17:11:23.706 +03:00  INF  Now listening on: https://localhost:7270
+2023-07-14 17:11:23.734 +03:00  INF  Now listening on: http://localhost:5027
+2023-07-14 17:11:23.736 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-14 17:11:23.736 +03:00  INF  Hosting environment: Development
+2023-07-14 17:11:23.736 +03:00  INF  Content root path: C:\Users\talha\OneDrive\Desktop\VisualStudio\Web\Sender\src\Presentation\Sender.WebAPI
+2023-07-14 17:11:24.644 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/index.html - -
+2023-07-14 17:11:24.988 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/index.html - - - 200 - text/html;charset=utf-8 346.6434ms
+2023-07-14 17:11:25.005 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - -
+2023-07-14 17:11:25.005 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_vs/browserLink - -
+2023-07-14 17:11:25.016 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 10.7320ms
+2023-07-14 17:11:25.068 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 63.3139ms
+2023-07-14 17:11:25.197 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - -
+2023-07-14 17:11:25.320 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 123.6569ms
+2023-07-14 17:11:27.797 +03:00  INF  Request starting HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------925015018499874903172354 551
+2023-07-14 17:11:27.805 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:11:27.829 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTsoftProducts(Sender.Core.Models.ApiModels.SiteUser) on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-14 17:11:29.765 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/auth/login/talha
+2023-07-14 17:11:29.766 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/auth/login/talha
+2023-07-14 17:11:30.086 +03:00  INF  Received HTTP response headers after 318.0807ms - 200
+2023-07-14 17:11:30.088 +03:00  INF  End processing HTTP request after 325.6973ms - 200
+2023-07-14 17:11:30.106 +03:00  INF  Token received from https://arge-talhabuyukkose.1isim.com
+2023-07-14 17:11:30.106 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:11:30.106 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:11:30.249 +03:00  INF  Received HTTP response headers after 142.6952ms - 200
+2023-07-14 17:11:30.249 +03:00  INF  End processing HTTP request after 143.0185ms - 200
+2023-07-14 17:11:33.362 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:11:33.362 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:11:33.362 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:11:33.724 +03:00  INF  Received HTTP response headers after 361.9563ms - 200
+2023-07-14 17:11:33.724 +03:00  INF  End processing HTTP request after 362.1824ms - 200
+2023-07-14 17:11:51.935 +03:00  INF  Now listening on: https://localhost:7270
+2023-07-14 17:11:51.958 +03:00  INF  Now listening on: http://localhost:5027
+2023-07-14 17:11:51.960 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-14 17:11:51.961 +03:00  INF  Hosting environment: Development
+2023-07-14 17:11:51.961 +03:00  INF  Content root path: C:\Users\talha\OneDrive\Desktop\VisualStudio\Web\Sender\src\Presentation\Sender.WebAPI
+2023-07-14 17:11:52.599 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/index.html - -
+2023-07-14 17:11:52.867 +03:00  INF  Request starting HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------629382136608325797685099 551
+2023-07-14 17:11:52.879 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:11:52.931 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTsoftProducts(Sender.Core.Models.ApiModels.SiteUser) on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-14 17:11:56.233 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/auth/login/talha
+2023-07-14 17:11:56.236 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/auth/login/talha
+2023-07-14 17:11:56.243 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_vs/browserLink - -
+2023-07-14 17:11:56.243 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - -
+2023-07-14 17:11:56.244 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/index.html - - - 200 - text/html;charset=utf-8 3646.7782ms
+2023-07-14 17:11:56.272 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 28.5763ms
+2023-07-14 17:11:56.312 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 68.8824ms
+2023-07-14 17:11:56.436 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - -
+2023-07-14 17:11:56.557 +03:00  INF  Received HTTP response headers after 316.7836ms - 200
+2023-07-14 17:11:56.559 +03:00  INF  End processing HTTP request after 329.3005ms - 200
+2023-07-14 17:11:56.559 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 123.3396ms
+2023-07-14 17:11:56.585 +03:00  INF  Token received from https://arge-talhabuyukkose.1isim.com
+2023-07-14 17:11:56.585 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:11:56.586 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:11:56.658 +03:00  INF  Received HTTP response headers after 72.7665ms - 200
+2023-07-14 17:11:56.659 +03:00  INF  End processing HTTP request after 73.2395ms - 200
+2023-07-14 17:11:56.670 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:11:56.670 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:11:56.670 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:11:56.999 +03:00  INF  Received HTTP response headers after 329.2597ms - 200
+2023-07-14 17:11:57.000 +03:00  INF  End processing HTTP request after 329.8042ms - 200
+2023-07-14 17:15:21.008 +03:00  INF  Executing OkObjectResult, writing value of type 'Sender.Core.Models.SenderModels.SenderBaseModel'.
+2023-07-14 17:15:21.035 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 208100.3751ms
+2023-07-14 17:15:21.035 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:15:21.036 +03:00  INF  Request finished HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------629382136608325797685099 551 - 200 - application/json;+charset=utf-8 208169.8003ms
+2023-07-14 17:15:36.522 +03:00  INF  Request starting HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------014129915630707131104953 551
+2023-07-14 17:15:36.523 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:15:36.528 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTsoftProducts(Sender.Core.Models.ApiModels.SiteUser) on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-14 17:15:38.090 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:15:38.090 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:15:38.090 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:15:38.401 +03:00  INF  Received HTTP response headers after 310.7531ms - 200
+2023-07-14 17:15:38.401 +03:00  INF  End processing HTTP request after 311.1075ms - 200
+2023-07-14 17:15:38.404 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:15:38.405 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:15:38.405 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:15:38.753 +03:00  INF  Received HTTP response headers after 348.1401ms - 200
+2023-07-14 17:15:38.753 +03:00  INF  End processing HTTP request after 348.3095ms - 200
+2023-07-14 17:15:39.892 +03:00  INF  Executing OkObjectResult, writing value of type 'Sender.Core.Models.SenderModels.SenderBaseModel'.
+2023-07-14 17:15:39.901 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 3372.2277ms
+2023-07-14 17:15:39.901 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:15:39.901 +03:00  INF  Request finished HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------014129915630707131104953 551 - 200 - application/json;+charset=utf-8 3378.9852ms
+2023-07-14 17:16:04.485 +03:00  INF  Request starting HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------909256463685603983835007 551
+2023-07-14 17:16:04.486 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:16:04.486 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTsoftProducts(Sender.Core.Models.ApiModels.SiteUser) on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-14 17:16:08.323 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:16:08.323 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:16:08.323 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:16:08.572 +03:00  INF  Received HTTP response headers after 248.8023ms - 200
+2023-07-14 17:16:08.572 +03:00  INF  End processing HTTP request after 249.2516ms - 200
+2023-07-14 17:16:21.578 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:16:21.579 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:16:21.579 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:16:22.051 +03:00  INF  Received HTTP response headers after 471.8355ms - 200
+2023-07-14 17:16:22.051 +03:00  INF  End processing HTTP request after 472.038ms - 200
+2023-07-14 17:16:50.373 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:16:50.373 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:16:50.375 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:16:50.632 +03:00  INF  Received HTTP response headers after 256.6193ms - 200
+2023-07-14 17:16:50.632 +03:00  INF  End processing HTTP request after 258.9595ms - 200
+2023-07-14 17:16:55.776 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:16:55.776 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:16:55.776 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:16:56.324 +03:00  INF  Received HTTP response headers after 547.634ms - 200
+2023-07-14 17:16:56.324 +03:00  INF  End processing HTTP request after 547.8034ms - 200
+2023-07-14 17:17:19.323 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:17:19.325 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:17:19.325 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:17:19.609 +03:00  INF  Received HTTP response headers after 283.2697ms - 200
+2023-07-14 17:17:19.609 +03:00  INF  End processing HTTP request after 284.4301ms - 200
+2023-07-14 17:17:22.901 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:17:22.901 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:17:22.901 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:17:23.238 +03:00  INF  Received HTTP response headers after 337.366ms - 200
+2023-07-14 17:17:23.238 +03:00  INF  End processing HTTP request after 337.4967ms - 200
+2023-07-14 17:17:26.646 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:17:26.646 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:17:26.646 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:17:26.962 +03:00  INF  Received HTTP response headers after 315.4841ms - 200
+2023-07-14 17:17:26.962 +03:00  INF  End processing HTTP request after 315.6314ms - 200
+2023-07-14 17:17:42.778 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:17:42.778 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:17:42.778 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:17:43.005 +03:00  INF  Received HTTP response headers after 226.5022ms - 200
+2023-07-14 17:17:43.005 +03:00  INF  End processing HTTP request after 226.6896ms - 200
+2023-07-14 17:17:45.069 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:17:45.069 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:17:45.069 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:17:45.451 +03:00  INF  Received HTTP response headers after 381.6282ms - 200
+2023-07-14 17:17:45.451 +03:00  INF  End processing HTTP request after 381.8149ms - 200
+2023-07-14 17:17:51.990 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:17:51.990 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:17:51.990 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:17:52.483 +03:00  INF  Received HTTP response headers after 492.4712ms - 200
+2023-07-14 17:17:52.483 +03:00  INF  End processing HTTP request after 492.7682ms - 200
+2023-07-14 17:18:28.967 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:18:28.968 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:18:28.968 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:18:29.491 +03:00  INF  Received HTTP response headers after 523.1319ms - 200
+2023-07-14 17:18:29.491 +03:00  INF  End processing HTTP request after 523.4177ms - 200
+2023-07-14 17:18:35.794 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:18:35.794 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:18:35.794 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:18:35.994 +03:00  INF  Received HTTP response headers after 199.7371ms - 200
+2023-07-14 17:18:35.994 +03:00  INF  End processing HTTP request after 200.0023ms - 200
+2023-07-14 17:18:45.950 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:19:01.969 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:19:01.969 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:19:02.457 +03:00  INF  Received HTTP response headers after 488.5498ms - 200
+2023-07-14 17:19:02.458 +03:00  INF  End processing HTTP request after 488.7529ms - 200
+2023-07-14 17:19:29.044 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:19:30.245 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:19:30.245 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:19:30.676 +03:00  INF  Received HTTP response headers after 430.8186ms - 200
+2023-07-14 17:19:30.676 +03:00  INF  End processing HTTP request after 430.9947ms - 200
+2023-07-14 17:19:35.982 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:19:35.984 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:19:35.984 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:19:36.199 +03:00  INF  Received HTTP response headers after 214.9299ms - 200
+2023-07-14 17:19:36.200 +03:00  INF  End processing HTTP request after 215.2407ms - 200
+2023-07-14 17:19:42.350 +03:00  ERR  An unhandled exception occurred.System.ArgumentNullException: Value cannot be null. (Parameter 'collection')
+   at System.Collections.Generic.List`1.InsertRange(Int32 index, IEnumerable`1 collection)
+   at Sender.WebAPI.Controllers.ProductController.GetTsoftProducts(SiteUser siteUser)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextExceptionFilterAsync>g__Awaited|26_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+
+2023-07-14 17:19:42.364 +03:00  INF  Executing ObjectResult, writing value of type 'System.String'.
+2023-07-14 17:19:42.365 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 217878.786ms
+2023-07-14 17:19:42.365 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:19:42.365 +03:00  INF  Request finished HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------909256463685603983835007 551 - 400 - text/plain;+charset=utf-8 217880.4314ms
+2023-07-14 17:19:45.984 +03:00  INF  Request starting HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------279891879043066051430283 551
+2023-07-14 17:19:45.984 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:19:45.988 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTsoftProducts(Sender.Core.Models.ApiModels.SiteUser) on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-14 17:19:47.993 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:19:47.993 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:19:47.993 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:19:48.232 +03:00  INF  Received HTTP response headers after 238.4649ms - 200
+2023-07-14 17:19:48.232 +03:00  INF  End processing HTTP request after 238.6271ms - 200
+2023-07-14 17:19:49.894 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:19:49.895 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:19:49.895 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:19:50.253 +03:00  INF  Received HTTP response headers after 358.1584ms - 200
+2023-07-14 17:19:50.253 +03:00  INF  End processing HTTP request after 358.309ms - 200
+2023-07-14 17:19:52.931 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:19:52.931 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:19:52.931 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:19:53.213 +03:00  INF  Received HTTP response headers after 281.8358ms - 200
+2023-07-14 17:19:53.213 +03:00  INF  End processing HTTP request after 282.0156ms - 200
+2023-07-14 17:20:02.150 +03:00  INF  Executing OkObjectResult, writing value of type 'Sender.Core.Models.SenderModels.SenderBaseModel'.
+2023-07-14 17:20:03.276 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 17288.3958ms
+2023-07-14 17:20:03.276 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:20:03.276 +03:00  INF  Request finished HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------279891879043066051430283 551 - 200 - application/json;+charset=utf-8 17292.1710ms
+2023-07-14 17:20:22.304 +03:00  INF  Request starting HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------270035516010108378916332 551
+2023-07-14 17:20:22.304 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:20:22.308 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTsoftProducts(Sender.Core.Models.ApiModels.SiteUser) on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-14 17:20:24.245 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:20:24.245 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:20:24.245 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:20:24.451 +03:00  INF  Received HTTP response headers after 206.4512ms - 200
+2023-07-14 17:20:24.452 +03:00  INF  End processing HTTP request after 206.6895ms - 200
+2023-07-14 17:20:24.454 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:20:24.454 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:20:24.454 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:20:24.777 +03:00  INF  Received HTTP response headers after 322.8463ms - 200
+2023-07-14 17:20:24.777 +03:00  INF  End processing HTTP request after 323.0792ms - 200
+2023-07-14 17:20:24.990 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:20:24.990 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:20:24.990 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:20:25.226 +03:00  INF  Received HTTP response headers after 236.3682ms - 200
+2023-07-14 17:20:25.226 +03:00  INF  End processing HTTP request after 236.4922ms - 200
+2023-07-14 17:20:27.746 +03:00  INF  Executing OkObjectResult, writing value of type 'Sender.Core.Models.SenderModels.SenderBaseModel'.
+2023-07-14 17:20:27.753 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 5445.3134ms
+2023-07-14 17:20:27.753 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:20:27.753 +03:00  INF  Request finished HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------270035516010108378916332 551 - 200 - application/json;+charset=utf-8 5449.3684ms
+2023-07-14 17:20:31.082 +03:00  INF  Request starting HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------854781207059882252277968 551
+2023-07-14 17:20:31.087 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:20:31.087 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTsoftProducts(Sender.Core.Models.ApiModels.SiteUser) on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-14 17:20:31.088 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:20:31.089 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:20:31.089 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:20:31.313 +03:00  INF  Received HTTP response headers after 223.8785ms - 200
+2023-07-14 17:20:31.313 +03:00  INF  End processing HTTP request after 224.0599ms - 200
+2023-07-14 17:20:31.313 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:20:31.313 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:20:31.313 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:20:31.633 +03:00  INF  Received HTTP response headers after 320.0617ms - 200
+2023-07-14 17:20:31.633 +03:00  INF  End processing HTTP request after 320.1732ms - 200
+2023-07-14 17:20:31.848 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:20:31.848 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:20:31.849 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:20:32.067 +03:00  INF  Received HTTP response headers after 218.5433ms - 200
+2023-07-14 17:20:32.067 +03:00  INF  End processing HTTP request after 218.6935ms - 200
+2023-07-14 17:20:32.081 +03:00  INF  Executing OkObjectResult, writing value of type 'Sender.Core.Models.SenderModels.SenderBaseModel'.
+2023-07-14 17:20:32.084 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 996.6273ms
+2023-07-14 17:20:32.084 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:20:32.084 +03:00  INF  Request finished HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------854781207059882252277968 551 - 200 - application/json;+charset=utf-8 1002.3572ms
+2023-07-14 17:27:01.536 +03:00  INF  Now listening on: https://localhost:7270
+2023-07-14 17:27:01.557 +03:00  INF  Now listening on: http://localhost:5027
+2023-07-14 17:27:01.560 +03:00  INF  Application started. Press Ctrl+C to shut down.
+2023-07-14 17:27:01.560 +03:00  INF  Hosting environment: Development
+2023-07-14 17:27:01.560 +03:00  INF  Content root path: C:\Users\talha\OneDrive\Desktop\VisualStudio\Web\Sender\src\Presentation\Sender.WebAPI
+2023-07-14 17:27:02.091 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/index.html - -
+2023-07-14 17:27:02.316 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_vs/browserLink - -
+2023-07-14 17:27:02.316 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - -
+2023-07-14 17:27:02.317 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/index.html - - - 200 - text/html;charset=utf-8 229.0286ms
+2023-07-14 17:27:02.333 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_framework/aspnetcore-browser-refresh.js - - - 200 11996 application/javascript;+charset=utf-8 17.1636ms
+2023-07-14 17:27:02.360 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 43.6462ms
+2023-07-14 17:27:02.494 +03:00  INF  Request starting HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - -
+2023-07-14 17:27:02.589 +03:00  INF  Request finished HTTP/2 GET https://localhost:7270/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 95.2987ms
+2023-07-14 17:27:04.996 +03:00  INF  Request starting HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------849057715218261735913300 551
+2023-07-14 17:27:05.003 +03:00  INF  Executing endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:27:05.028 +03:00  INF  Route matched with {action = "GetTsoftProducts", controller = "Product"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetTsoftProducts(Sender.Core.Models.ApiModels.SiteUser) on controller Sender.WebAPI.Controllers.ProductController (Sender.WebAPI).
+2023-07-14 17:27:05.087 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/auth/login/talha
+2023-07-14 17:27:05.089 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/auth/login/talha
+2023-07-14 17:27:05.381 +03:00  INF  Received HTTP response headers after 289.3642ms - 200
+2023-07-14 17:27:05.383 +03:00  INF  End processing HTTP request after 297.6879ms - 200
+2023-07-14 17:27:05.404 +03:00  INF  Token received from https://arge-talhabuyukkose.1isim.com
+2023-07-14 17:27:05.405 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:27:05.405 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProductTotal
+2023-07-14 17:27:05.534 +03:00  INF  Received HTTP response headers after 128.9408ms - 200
+2023-07-14 17:27:05.534 +03:00  INF  End processing HTTP request after 129.2094ms - 200
+2023-07-14 17:27:05.541 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:27:05.541 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:27:05.541 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:27:05.895 +03:00  INF  Received HTTP response headers after 354.008ms - 200
+2023-07-14 17:27:05.895 +03:00  INF  End processing HTTP request after 354.2095ms - 200
+2023-07-14 17:27:06.153 +03:00  INF  Token received from MemoryCacheService
+2023-07-14 17:27:06.153 +03:00  INF  Start processing HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:27:06.153 +03:00  INF  Sending HTTP request POST https://arge-talhabuyukkose.1isim.com/rest1/product/getProducts
+2023-07-14 17:27:06.398 +03:00  INF  Received HTTP response headers after 244.2249ms - 200
+2023-07-14 17:27:06.398 +03:00  INF  End processing HTTP request after 244.434ms - 200
+2023-07-14 17:27:06.531 +03:00  INF  Executing OkObjectResult, writing value of type 'Sender.Core.Models.SenderModels.SenderBaseModel'.
+2023-07-14 17:27:06.549 +03:00  INF  Executed action Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI) in 1517.5886ms
+2023-07-14 17:27:06.549 +03:00  INF  Executed endpoint 'Sender.WebAPI.Controllers.ProductController.GetTsoftProducts (Sender.WebAPI)'
+2023-07-14 17:27:06.550 +03:00  INF  Request finished HTTP/1.1 POST https://localhost:7270/api/Product multipart/form-data;+boundary=--------------------------849057715218261735913300 551 - 200 - application/json;+charset=utf-8 1554.2059ms

@@ -8,7 +8,7 @@ namespace Sender.Core.Models.TsoftModels
 {
     public class TsoftProductModel : TsoftBaseModel
     {
-        public List<Data> data { get; set; }
+        public List<Data> data { get; set; } = new List<Data>();
         public class Data
         {
             public string ProductId { get; set; }

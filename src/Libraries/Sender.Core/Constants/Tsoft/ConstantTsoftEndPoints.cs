@@ -12,6 +12,7 @@ namespace Sender.Core.Constants.Tsoft
         public const string GetProducts = "product/getProducts";
         public const string GetProductTotal = "product/getProductTotal";
         public const string AddImageFromFile = "product/addImageFromFile";
+        public const string AddImageFromLink = "product/addImageFromLink";
         public const string GetOrders = "order/get";
     }
 }

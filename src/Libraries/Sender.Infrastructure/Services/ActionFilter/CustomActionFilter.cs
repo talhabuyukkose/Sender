@@ -2,11 +2,14 @@
 using Microsoft.AspNetCore.Mvc.Filters;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Logging;
+using Sender.Core.Extensions.JsonProcess;
 using Sender.Core.Models.ApiModels;
+using Sender.Core.Models.SenderModels;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 
@@ -22,6 +25,28 @@ namespace Sender.Infrastructure.Services.ActionFilter
         }
         public void OnActionExecuted(ActionExecutedContext context)
         {
+            var response = context.Result;
+            if (response is OkObjectResult objectResult)
+            {
+                var bodyvalue = objectResult.Value;
+
+                var deserializedvalue = bodyvalue.JsonSerialize().JsonDeserialize<JsonElement>();
+
+                var count = deserializedvalue.GetArrayLength();
+
+                var baseModel = new SenderBaseModel()
+                {
+                    Data = bodyvalue,
+                    Message = $"{string.Join("/", context.RouteData.Values.Values)} verileri geldi",
+                    Success = true,
+                    summary = new SenderBaseModel.Summary()
+                    {
+                        primaryKey = "",
+                        totalRecordCount = deserializedvalue.GetArrayLength()
+                    }
+                };
+                objectResult.Value = baseModel;
+            }
         }
 
         public void OnActionExecuting(ActionExecutingContext context)
@@ -36,7 +61,7 @@ namespace Sender.Infrastructure.Services.ActionFilter
 
                     var match = Regex.IsMatch(siteUser.BaseUrl, pattern);
 
-                    if(match is false)
+                    if (match is false)
                     {
                         throw new ArgumentException($"{siteUser.BaseUrl} has fault");
                     }

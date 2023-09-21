@@ -13,7 +13,7 @@ namespace Sender.Core.Extensions.JsonProcess
         private static readonly JsonSerializerOptions _options = new JsonSerializerOptions
         {
             PropertyNameCaseInsensitive = true,
-            PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
+            //PropertyNamingPolicy = JsonNamingPolicy.CamelCase,
             ReferenceHandler = ReferenceHandler.IgnoreCycles,
             IgnoreNullValues = true,
             Converters = { new JsonStringEnumConverter() }
@@ -29,6 +29,17 @@ namespace Sender.Core.Extensions.JsonProcess
             try
             {
                 return JsonSerializer.Deserialize<T>(_string, _options);
+            }
+            catch (JsonException ex)
+            {
+                throw new JsonException("Failed to deserialize string to type " + typeof(T).Name, ex);
+            }
+        }
+        public static T JsonDeserialize<T>(this object _object)
+        {
+            try
+            {
+                return JsonSerializer.Deserialize<T>(_object.JsonSerialize(), _options);
             }
             catch (JsonException ex)
             {

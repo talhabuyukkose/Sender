@@ -20,7 +20,7 @@ namespace Sender.WebAPI.Controllers
             this.tsoftClient = tsoftClient;
         }
         [HttpPost]
-        public async IAsyncEnumerable<object> GetTsoftProducts([FromForm] SiteUser siteUser)
+        public async Task<IActionResult> GetTsoftProducts([FromForm] SiteUser siteUser)
         {
             //var siteUser = new SiteUser()
             //{
@@ -28,18 +28,9 @@ namespace Sender.WebAPI.Controllers
             //    UserName = "talha",
             //    Password = "Talha.01"
             //};
-            var totalproductcount = await tsoftClient.GetProductTotal(siteUser);
+            var tsoftProductModel = await tsoftClient.GetTsoftProductAll(siteUser);
 
-            int limit = 100;
-            for (int i = 0; i < totalproductcount / limit + 1; i = i + limit)
-            {
-                var responsemodel = await tsoftClient.GetProducts(siteUser, i, limit);
-
-                foreach (var item in responsemodel.data)
-                {
-                    yield return item;
-                }
-            }
-        }
+            return Ok(tsoftProductModel.data);
     }
+}
 }
